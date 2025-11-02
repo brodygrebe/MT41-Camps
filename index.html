@@ -205,8 +205,8 @@
     <div class="container two-col">
       <div>
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:info@mt41camps.com">info@mt41camps.com</a><br/>
-           Phone: (___) ___‑____</p>
+        <p>Email: <a href="mailto:mt41camps@gmail.com">mt41camps@gmail.com</a><br/>
+           Phone: (406) 860 ‑1423 </p>
         <p>Follow us: <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></p>
       </div>
       <form class="contact-form" onsubmit="return sendMessage(event)">
@@ -235,7 +235,7 @@
       if(!name || !email || !message){ status.textContent='Please fill out all fields.'; return false; }
       const subject = encodeURIComponent('MT41 Camps Inquiry from ' + name);
       const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>';);
-      window.location.href = 'mailto:info@mt41camps.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:mt41camps@gmail.com?subject=' + subject + '&body=' + body;
       status.textContent = 'Opening your email client...';
       return false;
     }
