@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MT41 Camps — Strong Minds. Strong Players.</title>
+  <style>
+    :root{
+      --navy:#0a1430; --navy2:#15254d; --gold:#ffd44d; --ink:#0f172a;
+      --slate:#64748b; --bg:#f6f7fb; --white:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{background:var(--white);border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand h1{margin:0;font-size:1.3rem;letter-spacing:.5px}
+    .brand p{margin:0;color:var(--slate);font-size:.92rem}
+    nav a{margin-left:16px;text-decoration:none;color:var(--ink);font-weight:600}
+    nav a.btn{padding:8px 14px;border:1px solid var(--ink);border-radius:8px}
+    nav a.btn:hover{background:var(--ink);color:var(--white)}
+    .btn.primary{background:var(--navy);color:var(--white);border-color:var(--navy)}
+    .btn.primary:hover{background:#050a1a}
+    .logoState{height:60px;width:auto;display:block}
+    .hero{background:linear-gradient(120deg,var(--navy),var(--navy2));color:var(--white);padding:70px 0;text-align:center}
+    .hero h2{font-size:2rem;margin:0 0 8px}
+    .hero p{opacity:.95;max-width:800px;margin:0 auto 18px}
+    .hero .actions .btn{margin:6px}
+    .section{padding:60px 0}
+    .section.alt{background:var(--white)}
+    .two-col{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+    .card{background:var(--white);padding:18px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+    .checks li{list-style:none;margin:8px 0;padding-left:22px;position:relative}
+    .checks li::before{content:'✓';position:absolute;left:0;color:green}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .tile{background:var(--white);padding:16px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .download{display:block;background:var(--navy);color:var(--white);padding:14px 16px;border-radius:10px;text-decoration:none}
+    .download:hover{background:#09112b}
+    .contact-form label{display:block;margin-bottom:10px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px;background:#fff}
+    .contact-form button{margin-top:8px}
+    footer{background:var(--navy);color:var(--white);padding:18px 0;text-align:center}
+    .hint{color:var(--slate);font-size:.9rem}
+    @media (max-width: 900px){
+      .two-col{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .nav{gap:8px}
+      nav a{margin:6px 8px 0 0;display:inline-block}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- State Outline Logo -->
+        <svg class="logoState" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg" aria-label="MT41 State Logo">
+          <path d="M10 25h370l8 70-35 0-10 35H40L30 95H10z" fill="#0a1430" stroke="#ffd44d" stroke-width="6" />
+          <text x="200" y="80" fill="#ffffff" font-family="Impact, Haettenschweiler, 'Arial Black', sans-serif" font-size="72" text-anchor="middle" dominant-baseline="middle">41</text>
+          <text x="200" y="120" fill="#ffd44d" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle">CAMPS</text>
+          <ellipse cx="200" cy="140" rx="20" ry="8" fill="none" stroke="#ffd44d" stroke-width="3"/>
+        </svg>
+        <div>
+          <h1>MT41 Camps</h1>
+          <p>Strong Minds. Strong Players.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register" class="btn">Register</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Montana Tough. Built Together.</h2>
+      <p>3-hour football development camps for grades 7–12 across Eastern Montana & Western North Dakota — blending elite fundamentals with mental toughness.</p>
+      <div class="actions">
+        <a href="#register" class="btn primary">Register Now</a>
+        <a href="#downloads" class="btn">Download Waiver</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div>
+        <h3>Why “41”?</h3>
+        <p><strong>41</strong> is personal and Montana‑proud — your college jersey number, the Montana State Bobcats legacy number, and Montana’s place as the 41st state. MT41 is a mindset: earn it, own it, and bring it back to your team.</p>
+        <ul class="checks">
+          <li>Mental & physical development</li>
+          <li>Scheme‑free fundamentals every coach approves</li>
+          <li>Competitions spread throughout to build poise under pressure</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>What Athletes Work On</h4>
+        <ul>
+          <li>Footwork, leverage, safe tackling form</li>
+          <li>Offense focus: QB/WR/RB/OL mechanics</li>
+          <li>Defense focus: DB/LB/DL reaction & pursuit</li>
+          <li>Mental lessons: goals → accountability → leadership</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section alt">
+    <div class="container">
+      <h3>Sample 3‑Hour Camp Flow</h3>
+      <div class="grid-3">
+        <div class="tile">
+          <h4>Warm‑Up</h4>
+          <p>Dynamic mobility, activation, speed prep.</p>
+        </div>
+        <div class="tile">
+          <h4>Fundamentals</h4>
+          <p>Agility, ball security, blocking fits, non‑contact tackling form.</p>
+        </div>
+        <div class="tile">
+          <h4>Competitions</h4>
+          <p>T‑Shirt Pull → Tug‑of‑War → Tic‑Tac‑Toe → Bobcat Ball → Plank Challenge.</p>
+        </div>
+        <div class="tile">
+          <h4>Offense Focus</h4>
+          <p>QB drops & release, WR releases & breaks, RB vision & security, OL footwork & hands.</p>
+        </div>
+        <div class="tile">
+          <h4>Defense Focus</h4>
+          <p>DB backpedal & break, LB shuffle & angles, DL get‑off & hand usage.</p>
+        </div>
+        <div class="tile">
+          <h4>Competitive Situations</h4>
+          <p>1v1 & 2v1 non‑contact tackling fits; 1v1 OL vs DL pass rush.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="section">
+    <div class="container two-col">
+      <div>
+        <h3>Register</h3>
+        <p>Spots are limited in each town. Reserve your place now.</p>
+        <ol>
+          <li>Complete the online registration form.</li>
+          <li>Download, complete, and bring the waiver.</li>
+          <li>Arrive 15 minutes early for check‑in.</li>
+        </ol>
+        <a class="btn primary" href="https://forms.gle/YOUR_FORM_ID" target="_blank" rel="noopener">Open Registration Form</a>
+        <p class="hint">Tip: create a Google Form and paste its link here.</p>
+      </div>
+      <div class="card">
+        <h4>Pricing</h4>
+        <p>$65 per athlete (3 hours).</p>
+        <ul>
+          <li>Sibling discount available</li>
+          <li>Team/group rates on request</li>
+        </ul>
+        <p class="hint">Pay online or at check‑in (QR or card).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="downloads" class="section alt">
+    <div class="container">
+      <h3>Downloads</h3>
+      <div class="download-grid">
+        <a class="download" href="MT41_Camps_Waiver_Signup_Final.pdf">Waiver & Signup Form (PDF)</a>
+        <a class="download" href="MT41_Camps_Info_Sheet.pdf">Parent Info Sheet (PDF)</a>
+      </div>
+      <p class="hint">Place the two PDF files in the same folder as this HTML file so these buttons work.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h3>FAQ</h3>
+      <details>
+        <summary>Who can attend?</summary>
+        <p>Athletes entering grades 7–12.</p>
+      </details>
+      <details>
+        <summary>Is there contact?</summary>
+        <p>No live contact. Tackling instruction is non‑contact form and bag work only.</p>
+      </details>
+      <details>
+        <summary>What should athletes bring?</summary>
+        <p>Cleats, water bottle, athletic gear, sunscreen (outdoor), and a great attitude.</p>
+      </details>
+      <details>
+        <summary>What if there’s bad weather?</summary>
+        <p>We’ll reschedule or offer a credit/refund if a session must be cancelled for safety.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container two-col">
+      <div>
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:info@mt41camps.com">info@mt41camps.com</a><br/>
+           Phone: (___) ___‑____</p>
+        <p>Follow us: <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></p>
+      </div>
+      <form class="contact-form" onsubmit="return sendMessage(event)">
+        <label>Name<input type="text" id="name" required></label>
+        <label>Email<input type="email" id="email" required></label>
+        <label>Message<textarea id="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus" class="hint"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> MT41 Camps. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function sendMessage(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+      if(!name || !email || !message){ status.textContent='Please fill out all fields.'; return false; }
+      const subject = encodeURIComponent('MT41 Camps Inquiry from ' + name);
+      const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>';);
+      window.location.href = 'mailto:info@mt41camps.com?subject=' + subject + '&body=' + body;
+      status.textContent = 'Opening your email client...';
+      return false;
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
