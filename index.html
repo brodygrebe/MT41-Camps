@@ -73,6 +73,9 @@
         <a href="#register" class="btn">Register</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
+        <a href="#downloads">Downloads</a>
+        <a href="MT41_Camps_Waiver_Signup_Final.pdf">Waiver</a>
+        <a href="MT41_Camps_Info_Sheet.pdf">Info Sheet</a>
       </nav>
     </div>
   </header>
@@ -84,6 +87,8 @@
       <div class="actions">
         <a href="#register" class="btn primary">Register Now</a>
         <a href="#downloads" class="btn">Download Waiver</a>
+        <a href="MT41_Camps_Waiver_Signup_Final.pdf" class="btn">Waiver (PDF)</a>
+        <a href="MT41_Camps_Info_Sheet.pdf" class="btn">Info Sheet (PDF)</a>
       </div>
     </div>
   </section>
@@ -125,7 +130,7 @@
         </div>
         <div class="tile">
           <h4>Competitions</h4>
-          <p>T‑Shirt Pull → Tug‑of‑War → Tic‑Tac‑Toe → Bobcat Ball → Plank Challenge.</p>
+          <p>It's a secret, be ready for anything.</p>
         </div>
         <div class="tile">
           <h4>Offense Focus</h4>
@@ -140,6 +145,28 @@
           <p>1v1 & 2v1 non‑contact tackling fits; 1v1 OL vs DL pass rush.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="monthly-schedule" class="section">
+    <div class="container">
+      <h3>Monthly Camp Schedule</h3>
+      <p>Planned towns and dates for upcoming camps each month. Check back often as locations fill up.</p>
+      <div class="card">
+        <h4>May</h4>
+        <ul>
+          <li>May 10 — Miles City, MT — Central High School</li>
+          <li>May 17 — Glendive, MT — City Park</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>June</h4>
+        <ul>
+          <li>June 7 — Sidney, MT — Roughrider Field</li>
+          <li>June 21 — Williston, ND — Memorial Stadium</li>
+        </ul>
+      </div>
+      <p class="hint">If you want, I can make this a table or pull these from a JSON file to make updates easier.</p>
     </div>
   </section>
 
@@ -194,10 +221,6 @@
         <summary>What should athletes bring?</summary>
         <p>Cleats, water bottle, athletic gear, sunscreen (outdoor), and a great attitude.</p>
       </details>
-      <details>
-        <summary>What if there’s bad weather?</summary>
-        <p>We’ll reschedule or offer a credit/refund if a session must be cancelled for safety.</p>
-      </details>
     </div>
   </section>
 
@@ -205,8 +228,8 @@
     <div class="container two-col">
       <div>
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:mt41camps@gmail.com">mt41camps@gmail.com</a><br/>
-           Phone: (406) 860 ‑1423 </p>
+        <p>Email: <a href="mailto:info@mt41camps.com">info@mt41camps.com</a><br/>
+           Phone: (___) ___‑____</p>
         <p>Follow us: <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></p>
       </div>
       <form class="contact-form" onsubmit="return sendMessage(event)">
@@ -234,8 +257,8 @@
       const status = document.getElementById('formStatus');
       if(!name || !email || !message){ status.textContent='Please fill out all fields.'; return false; }
       const subject = encodeURIComponent('MT41 Camps Inquiry from ' + name);
-      const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>';);
-      window.location.href = 'mailto:mt41camps@gmail.com?subject=' + subject + '&body=' + body;
+      const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>');
+      window.location.href = 'mailto:info@mt41camps.com?subject=' + subject + '&body=' + body;
       status.textContent = 'Opening your email client...';
       return false;
     }
