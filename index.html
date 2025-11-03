@@ -102,6 +102,7 @@
       </div>
       <div class="card">
         <h4>What Athletes Work On</h4>
+        </ul>
           <li>Footwork, leverage, safe tackling form</li>  
           <li>Offense focus: QB/WR/RB/OL mechanics</li>  
           <li>Defense focus: DB/LB/DL reaction & pursuit</li>
@@ -193,8 +194,9 @@
     <div class="container">
       <h3>Downloads</h3>
       <div class="download-grid">
-        <a class="download" href="MT41 Camps/MT41_Camps_Waiver_Signup.pdf">Waiver & Signup Form (PDF)</a> 
-        <a class="download" href="MT41 Camps/MT41_Camps_Info_Sheet.pdf">Parent Info Sheet (PDF)</a>
+        <a class="download" href="MT41_Camps_Waiver_Signup.pdf">Waiver & Signup Form (PDF)</a>
+        <a class="download" href="MT41_Camps_Info_Sheet.pdf">Parent Info Sheet (PDF)</a>
+
 
       </div>
       <p class="hint">Place the two PDF files in the same folder as this HTML file so these buttons work.</p>
@@ -253,7 +255,7 @@
       if(!name || !email || !message){ status.textContent='Please fill out all fields.'; return false; }
       const subject = encodeURIComponent('MT41 Camps Inquiry from ' + name);
       const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>');
-      window.location.href = 'mailto:info@mt41camps.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:mt41camps@gmail.com?subject=' + subject + '&body=' + body;
       status.textContent = 'Opening your email client...';
       return false;
     }
