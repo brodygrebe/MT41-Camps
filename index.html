@@ -47,6 +47,22 @@
   list-style: disc;
 }
 
+    /* Center buttons in hero and add spacing */
+.hero .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;            /* space between buttons */
+  flex-wrap: wrap;
+}
+
+/* Make the Register button big + bold */
+.hero .actions .btn.big-cta {
+  font-size: 1.25rem;   /* larger text */
+  font-weight: 800;     /* bold */
+  padding: 16px 28px;   /* bigger hit area */
+  border-radius: 12px;
+}
     .checks li{list-style:none;margin:8px 0;padding-left:22px;position:relative}
     .checks li::before{content:'✓';position:absolute;left:0;color:green}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -99,10 +115,11 @@
     <div class="container">
       <h2>Montana Tough. Built Together.</h2>
       <p>3-hour football development camps for grades 7–12 across Montana — blending elite fundamentals with mental toughness.</p>
+     
       <div class="actions">
-        <a href="https://forms.gle/iV83vKf4uFRLgoqE6" class="btn primary" target="_blank" rel="noopener">Register Now</a>
-        <a href="#downloads" class="btn">Downloads</a>
-      </div>
+  <a href="https://forms.gle/iV83vKf4uFRLgoqE6" class="btn primary big-cta" target="_blank" rel="noopener">Register Now</a>
+  <a href="#downloads" class="btn">Downloads</a>
+</div>
     </div>
   </section>
 
