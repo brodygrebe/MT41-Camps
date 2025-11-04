@@ -76,13 +76,19 @@
     footer{background:var(--navy);color:var(--white);padding:18px 0;text-align:center}
     .hint{color:var(--slate);font-size:.9rem}
 
-    /* Force Register button to its own line */
+/* Make REGISTER take its own row */
 .hero .actions .btn.primary.big-cta {
+  flex-basis: 100%;
   display: block;
   width: fit-content;
-  margin: 12px auto; /* centers it */
+  margin: 12px auto;
+  order: 0;
 }
 
+/* Keep other buttons on the next line */
+.hero .actions .btn:not(.big-cta) {
+  order: 1;
+}
     
     @media (max-width: 900px){
       .two-col{grid-template-columns:1fr}
