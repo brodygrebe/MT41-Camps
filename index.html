@@ -91,7 +91,27 @@
   transition: transform 0.15s ease-in-out;
 }
 
-    
+    /* Default Register Now button styling */
+.hero .actions .btn.primary.big-cta {
+  background: linear-gradient(90deg, #0a1430, #15254d);
+  color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 16px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+/* Hover animation with scale and gradient pulse */
+.hero .actions .btn.primary.big-cta:hover {
+  background: linear-gradient(90deg, #15254d, #1f3a7d);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 212, 77, 0.4);
+}
+
     .checks li{list-style:none;margin:8px 0;padding-left:22px;position:relative}
     .checks li::before{content:'✓';position:absolute;left:0;color:green}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
