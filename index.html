@@ -63,6 +63,19 @@
   padding: 16px 28px;   /* bigger hit area */
   border-radius: 12px;
 }
+
+    .logoState {
+  height: 100px; /* increase this number to make it bigger */
+  width: auto;
+  display: block;
+}
+
+    @media (max-width: 600px) {
+  .logoState {
+    height: 70px;
+  }
+}
+
     .checks li{list-style:none;margin:8px 0;padding-left:22px;position:relative}
     .checks li::before{content:'✓';position:absolute;left:0;color:green}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
