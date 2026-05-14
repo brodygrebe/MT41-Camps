@@ -91,6 +91,30 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
 }
+
+    .sponsor-details {
+  margin-top: 18px;
+}
+
+.sponsor-details summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.sponsor-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.sponsor-options {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.sponsor-contact {
+  margin-top: 24px;
+  text-align: center;
+}
     
     .card h4 {
   margin: 0 0 12px;
@@ -378,18 +402,22 @@
       </div>
     </div>
   </section>
-<section id="sponsors" class="section alt">
+
+  <section id="sponsors" class="section alt">
   <div class="container">
     <h3>Camp Sponsors</h3>
     <p>
-      Thank you to the businesses and individuals helping bring MT41 Camps to athletes across Montana.
+      Thank you to the businesses and individuals helping bring MT41 Camps to athletes across Montana and North Dakota.
     </p>
 
     <div class="sponsor-scroll">
       <div class="sponsor-logo-card">
-        <span>Your Logo Here</span>
+        <span>Founding Sponsors Coming Soon</span>
       </div>
 
+      <div class="sponsor-logo-card">
+        <span>Your Business Here</span>
+      </div>
 
       <div class="sponsor-logo-card">
         <span>Your Logo Here</span>
@@ -399,11 +427,9 @@
         <span>Your Logo Here</span>
       </div>
 
-      <div class="sponsor-logo-card">
-        <span>Your Logo Here</span>
-      </div>
+      <!-- 
+      Example with an actual logo file:
 
-      <!-- Example with an actual logo file:
       <div class="sponsor-logo-card">
         <img src="sponsor-logo.png" alt="Sponsor Name">
       </div>
@@ -415,58 +441,62 @@
       <p>
         Sponsorships help cover camp costs, equipment, shirts, travel, and keep the camp experience affordable for families.
       </p>
-      <a class="btn primary" href="#sponsor-options">View Sponsorship Options</a>
-    </div>
 
-    <div id="sponsor-options" class="sponsor-options">
-      <h3>Sponsorship Options</h3>
+      <details class="sponsor-details">
+        <summary class="btn primary">View Sponsorship Options</summary>
 
-      <div class="sponsor-grid">
-        <div class="tile">
-          <h4>Bronze Sponsor — $500</h4>
-          <ul>
-            <li>Logo/name on camp banner</li>
-            <li>Logo/name listed on website</li>
-          </ul>
+        <div class="sponsor-options">
+          <h3>Sponsorship Options</h3>
+
+          <div class="sponsor-grid">
+            <div class="tile">
+              <h4>Bronze Sponsor — $500</h4>
+              <ul>
+                <li>Logo/name on camp banner</li>
+                <li>Logo/name listed on website</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h4>Silver Sponsor — $1,000</h4>
+              <ul>
+                <li>Bronze benefits included</li>
+                <li>Logo/name on back of camp T-shirt</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h4>Gold Sponsor — $2,000</h4>
+              <ul>
+                <li>Silver benefits included</li>
+                <li>Included in camp social media posts</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h4>Platinum Sponsor — $5,000</h4>
+              <ul>
+                <li>Gold benefits included</li>
+                <li>Individual sponsor spotlight post</li>
+                <li>Premium recognition at camp</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card sponsor-contact">
+            <h4>Interested in sponsoring MT41 Camps?</h4>
+            <p>
+              Please contact us at 
+              <a href="mailto:mt41camps@gmail.com">mt41camps@gmail.com</a>
+              and let us know which sponsorship level you are interested in.
+            </p>
+
+            <a class="btn primary" href="mailto:mt41camps@gmail.com?subject=MT41%20Camps%20Sponsorship%20Interest">
+              Email MT41 Camps
+            </a>
+          </div>
         </div>
-
-        <div class="tile">
-          <h4>Silver Sponsor — $1,000</h4>
-          <ul>
-            <li>Bronze benefits included</li>
-            <li>Logo/name on back of camp T-shirt</li>
-          </ul>
-        </div>
-
-        <div class="tile">
-          <h4>Gold Sponsor — $2,000</h4>
-          <ul>
-            <li>Silver benefits included</li>
-            <li>Included in camp social media posts</li>
-          </ul>
-        </div>
-
-        <div class="tile">
-          <h4>Platinum Sponsor — $5,000</h4>
-          <ul>
-            <li>Gold benefits included</li>
-            <li>Individual sponsor spotlight post</li>
-            <li>Premium recognition at camp</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card sponsor-cta">
-        <h4>Interested in sponsoring MT41 Camps?</h4>
-        <p>
-          Please contact us at 
-          <a href="mailto:mt41camps@gmail.com">mt41camps@gmail.com</a>
-          and let us know which sponsorship level you are interested in.
-        </p>
-        <a class="btn primary" href="mailto:mt41camps@gmail.com?subject=MT41%20Camps%20Sponsorship%20Interest">
-          Email MT41 Camps
-        </a>
-      </div>
+      </details>
     </div>
   </div>
 </section>
