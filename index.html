@@ -222,6 +222,53 @@
 .hero .actions .btn:not(.big-cta) {
   order: 1;
 }
+    .coach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.coach-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.coach-card img {
+  width: 100%;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.coach-card h4 {
+  margin: 8px 0 4px;
+  font-size: 1.25rem;
+}
+
+.coach-title {
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.coach-highlights {
+  text-align: left;
+  margin: 14px 0 0;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.coach-highlights li {
+  margin-bottom: 6px;
+}
     
     @media (max-width: 900px){
       .two-col{grid-template-columns:1fr}
@@ -248,7 +295,8 @@
       </div>
   <nav>
     <a href="#about">About</a>
-    <a href="#coach">Coach</a> <!-- NEW -->
+     <a href="#coach">Founder</a> <!-- NEW -->
+    <a href="#coaches">Coaches</a> <!-- NEW -->
     <a href="#schedule">Schedule</a>
     <a href="#register" class="btn">Register</a>
     <a href="#sponsors">Sponsors</a>
@@ -297,7 +345,7 @@
   <section id="coach" class="section alt">
   <div class="container two-col">
     <div>
-      <h3>Meet Coach Brody Grebe</h3>
+      <h3>Meet Founder Brody Grebe</h3>
       <p>
         Born and raised in Class C Montana, Brody Grebe understands what it means to represent a small community with big expectations. He grew up playing 6-man football in junior high before moving into 11-man football in high school, proving that talent, toughness, and work ethic can come from anywhere. That Montana-built mindset took him to the collegiate level, where he proudly wore <strong>#41</strong> to represent Montana and the values it stands for, becoming a <strong>2-time team captain</strong> and earning recognition as a leader by both teammates and coaches. Brody was named the <strong>Big Sky Defensive Player of the Year</strong>, is a <strong>3-time All-American</strong>, <strong>3-time First-Team All-Conference selection</strong>, <strong>3-time Academic All-American</strong>, and <strong>3-time Academic All-Conference honoree</strong> — all while earning a <strong>3.96 GPA in Mechanical Engineering</strong> and being recognized as the <strong>Montana Society of Engineers Engineer of the Year</strong>. Dedicated to building leaders on and off the field, Brody is committed to giving Montana athletes the tools, mindset, and work ethic they need to succeed at the next level.
       </p>
@@ -318,6 +366,96 @@
     </div>
   </div>
 </section>
+
+</section>
+
+<section id="coaches" class="section">
+  <div class="container">
+    <h3>Meet the Coaches</h3>
+    <p>
+      MT41 Camps is led by current and former college football players who are excited to help athletes improve,
+      compete, and grow on and off the field.
+    </p>
+
+    <div class="coach-grid">
+
+      <div class="coach-card">
+        <img src="bryce-grebe.jpg" alt="Bryce Grebe">
+        <h4>Bryce Grebe</h4>
+        <p class="coach-title">Montana State University — Linebacker</p>
+        <ul class="coach-highlights">
+          <li>National Champion</li>
+          <li>Starting Linebacker</li>
+          <li>Pick 6 in Brawl of the Wild</li>
+          <li>Standout 6-Man Athlete</li>
+        </ul>
+      </div>
+
+      <div class="coach-card">
+        <img src="paul-brott.jpg" alt="Paul Brott">
+        <h4>Paul Brott</h4>
+        <p class="coach-title">Montana State University — Defensive Line</p>
+        <ul class="coach-highlights">
+          <li>National Champion</li>
+          <li>2025 Second Team All-America</li>
+          <li>Legacy No. 41</li>
+          <li>Bobcat Team Captain</li>
+        </ul>
+      </div>
+
+      <div class="coach-card">
+        <img src="hunter-sharbono.jpg" alt="Hunter Sharbono">
+        <h4>Hunter Sharbono</h4>
+        <p class="coach-title">Montana State University — Defensive Tackle</p>
+        <ul class="coach-highlights">
+          <li>National Champion</li>
+          <li>Played in all 16 games in 2025</li>
+          <li>4x 8-Man All-State</li>
+          <li>State Champion</li>
+        </ul>
+      </div>
+
+      <div class="coach-card">
+        <img src="mason-dethman.jpg" alt="Mason Dethman">
+        <h4>Mason Dethman</h4>
+        <p class="coach-title">Froid-Medicine Lake / Montana State University — Defensive Back / Safety</p>
+        <ul class="coach-highlights">
+          <li>National Champion</li>
+          <li>Played in all 16 games in 2025</li>
+          <li>2x State Champion</li>
+          <li>Standout 6-Man Athlete</li>
+        </ul>
+      </div>
+
+      <div class="coach-card">
+        <img src="ben-glasscock.jpg" alt="Ben Glasscock">
+        <h4>Ben Glasscock</h4>
+        <p class="coach-title">Dickinson State — Defensive End</p>
+        <ul class="coach-highlights">
+          <li>Appeared in all 10 games at DSU in 2025</li>
+          <li>State Champion</li>
+          <li>All-State</li>
+          <li>Eastern A Standout</li>
+        </ul>
+      </div>
+
+      <div class="coach-card">
+        <img src="levi-eaton.jpg" alt="Levi Eaton">
+        <h4>Levi Eaton</h4>
+        <p class="coach-title">Dickinson State — Offensive Line</p>
+        <ul class="coach-highlights">
+          <li>Dickinson State Football</li>
+          <li>All-State</li>
+          <li>State A Standout</li>
+          <li>Multi-Sport Athlete</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
   <section id="schedule" class="section">
     <div class="container">
       <h3>Sample Camp Flow</h3>
@@ -426,16 +564,13 @@
     </div>
 
             <div class="sponsor-logo-card">
-      <img src="hurleys-logo2.png" alt="Hurley's Oilfield Service">
+      <img src="Hurleys-logo2.png" alt="Hurley's Oilfield Service">
     </div>
 
                     <div class="sponsor-logo-card">
       <img src="SABR LOGO.jpg" alt="Saber">
     </div>
 
-            <div class="sponsor-logo-card">
-      <img src="hurleys-logo2.png" alt="Hurley's Oilfield Service">
-    </div>
                 <div class="sponsor-logo-card">
       <img src="HamlinWater-logo.jpg" alt="Hamlin">
     </div>
@@ -470,7 +605,7 @@
     </div>
 
         <div class="sponsor-logo-card">
-      <img src="pepsi-logo.png" alt="Pepsi">
+      <img src="pepsi-logo.jpg" alt="Pepsi">
     </div>
 
      <div class="sponsor-logo-card">
